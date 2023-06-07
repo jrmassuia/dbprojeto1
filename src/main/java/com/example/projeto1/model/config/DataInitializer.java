@@ -25,7 +25,7 @@ public class DataInitializer implements ApplicationListener<ContextRefreshedEven
             criarUsuario("joao@gmail.com", "joao");
         }
 
-        System.out.println(userRepository.findUsuarioByNameLike("mar").getName());
+        System.out.println(userRepository.findUsuariosByName("maria").getName());
     }
 
     private void criarUsuario(String email, String nome) {
